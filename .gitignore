@@ -1,5 +1,7 @@
 node_modules/
-
-# Tailwind build output (if generated)
 dist/
 build/
+.env
+.vscode/
+.DS_Store
+Thumbs.db
