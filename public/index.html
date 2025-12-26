@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+
+    <!--============= favicon =============-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!--============= Remix Icon =============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"
+        integrity="sha512-MqL4+Io386IOPMKKyplKII0pVW5e+kb+PI/I3N87G3fHIfrgNNsRpzIXEi+0MQC0sR9xZNqZqCYVcC61fL5+Vg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--============= Swiper Css =============-->
+
+    <!--============= Google font =============-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bayon&family=Changa+One:ital@0;1&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+        rel="stylesheet">
+
+</head>
+<style>
+    .logo {
+        font-family: "Changa One", sans-serif;
+    }
+
+    .container {
+        width: 100%;
+        margin-inline: auto;
+        padding-inline: 40px;
+    }
+
+    @media (min-width: 768px) {
+        .container {
+            padding-inline: 50px;
+        }
+    }
+</style>
+
+<body>
+    <!--============= Header =============-->
+    <header id="navbar" class="bg-blue-950 text-amber-100 fixed w-full top-0 right-0 z-50 shadow-md">
+        <nav class="container flex items-center justify-between h-16 sm:h-20 ">
+            <div class="sm:text-2xl logo">Lyheang Achitecture.</div>
+
+            <div id="nav-menu" class="absolute top-16 left-[-100%] h-screen w-64 bg-white backdrop-blur-sm
+            duration-300 overflow-hidden lg:static lg:h-auto lg:w-auto lg:bg-transparent">
+                <ul class="flex flex-col gap-1 lg:flex-row">
+                    <li>
+                        <a href="#home" class="nav-link active">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about" class="nav-link">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#service" class="nav-link">Service</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+
+                <!-- <div class="absolute bottom-0 -right-10 opacity-90 lg:hidden">
+                    <img src="assets/img/Leaf-1.png" alt="leaf image" class="w-32">
+
+                </div>
+                <div class="absolute -top-5 left-0 rotate-90 opacity-90 lg:hidden">
+                    <img src="assets/img/leaf-2.png" alt="leaf image" class="w-32">
+                </div> -->
+            </div>
+
+            <div class="text-xl sm:text-3xl cursor-pointer z-50 lg:hidden">
+                <i class="ri-menu-2-fill" id="hamburger"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="max-w-[1920px] mx-auto">
+        <!--============= Home =============-->
+        <div id="home" class="text-amber-100 pt-20 xl:h-screen">
+            <div class="flex flex-col lg:flex-row xl:h-full">
+                <div class="relative flex flex-col justify-between overflow-hidden lg:w-[30%]">
+
+                    <div class="h-[calc(100%-100px)] flex flex-col gap-8
+                    items-center justify-center py-12 xl:py-28 xl:gap-16 xl:max-w-xs xl:mx-auto">
+                        <h1>
+                            Designing <br>
+                            & building
+                        </h1>
+
+                        <h4 class="xl:self-end">
+                            Energy-efficient <br>
+                            modern residences <br>
+                            from 130 sq. m.
+                        </h4>
+
+                        <button class="btn btn_outline xl:self-start">Contact Us</button>
+                    </div>
+
+                    <div class="flex items-center justify-center gap-8 bg-blue-900 w-full h-[100px]">
+                        <div id="prev"
+                            class="carousel_button_prev text-lg h-12 w-12 border-2 border-amber-100 rounded-2xl grid place-items-center hover:text-amber-600 duration-300">
+                            <i class="ri-arrow-left-wide-line"></i>
+                        </div>
+                        <div id="next"
+                            class="carousel_button_next text-lg h-12 w-12 border-2 border-amber-100 rounded-2xl grid place-items-center hover:text-amber-600 duration-300">
+                            <i class="ri-arrow-right-wide-line"></i>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- carousel image -->
+                <div class="lg:w-[70%]">
+                    <div class="carousel carousel_fade h-full">
+                        <div class="carousel_inner h-full">
+                            <div class="relative flex h-full">
+
+                                <!-- item-1 -->
+                                <div class="carousel_item carousel_item_active h-full">
+                                    <img src="assets/img/slide-1.jpg" alt="carousel_image"
+                                        class="casousel_img h-[calc(100%-100px)]">
+
+                                    <div
+                                        class="h-[100px] flex flex-col gap-2 items-center justify-center px-5 lg:flex-row lg:justify-between">
+                                        <div
+                                            class="hidden lg:block text-gray-400 lg:text-2xl xl:text-5xl font-bold uppercase">
+                                            63+ works</div>
+
+                                        <div class="flex flex-wrap gap-x-2 lg:gap-x-5 justify-center items-center">
+                                            <h4 class="text-white">Hews Ave</h4>
+                                            <h4>290 sq. m.</h4>
+                                            <h4>$XXX XXX</h4>
+                                            <h4 class="hidden xl:block border-b w-12 border-gray-400"></h4>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- item-2 -->
+                                <div class="carousel_item h-full">
+                                    <img src="assets/img/slide-2.jpg" alt="carousel_image"
+                                        class="casousel_img h-[calc(100%-100px)]">
+
+                                    <div
+                                        class="h-[100px] flex flex-col gap-2 items-center justify-center px-5 lg:flex-row lg:justify-between">
+                                        <div
+                                            class="hidden lg:block text-gray-400 lg:text-2xl xl:text-5xl font-bold uppercase">
+                                            63+ works</div>
+
+                                        <div class="flex flex-wrap gap-x-2 lg:gap-x-5 justify-center items-center">
+                                            <h4 class="text-white">Hews Ave</h4>
+                                            <h4>290 sq. m.</h4>
+                                            <h4>$XXX XXX</h4>
+                                            <h4 class="hidden xl:block border-b w-12 border-gray-400"></h4>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- item-3-->
+                                <div class="carousel_item h-full">
+                                    <img src="assets/img/slide-3.jpg" alt="carousel_image"
+                                        class="casousel_img h-[calc(100%-100px)]">
+
+                                    <div
+                                        class="h-[100px] flex flex-col gap-2 items-center justify-center px-5 lg:flex-row lg:justify-between">
+                                        <div
+                                            class="hidden lg:block text-gray-400 lg:text-2xl xl:text-5xl font-bold uppercase">
+                                            63+ works</div>
+
+                                        <div class="flex flex-wrap gap-x-2 lg:gap-x-5 justify-center items-center">
+                                            <h4 class="text-white">Hews Ave</h4>
+                                            <h4>290 sq. m.</h4>
+                                            <h4>$XXX XXX</h4>
+                                            <h4 class="hidden xl:block border-b w-12 border-gray-400"></h4>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- item-4 -->
+                                <div class="carousel_item h-full">
+                                    <img src="assets/img/slide-4.jpg" alt="carousel_image"
+                                        class="casousel_img h-[calc(100%-100px)]">
+
+                                    <div
+                                        class="h-[100px] flex flex-col gap-2 items-center justify-center px-5 lg:flex-row lg:justify-between">
+                                        <div
+                                            class="hidden lg:block text-gray-400 lg:text-2xl xl:text-5xl font-bold uppercase">
+                                            63+ works</div>
+
+                                        <div class="flex flex-wrap gap-x-2 lg:gap-x-5 justify-center items-center">
+                                            <h4 class="text-white">Hews Ave</h4>
+                                            <h4>290 sq. m.</h4>
+                                            <h4>$XXX XXX</h4>
+                                            <h4 class="hidden xl:block border-b w-12 border-gray-400"></h4>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--============= About Us =============-->
+        <section id="about"></section>
+
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+    <!--=============  =============-->
+    <!--=============  =============-->
+    <!--=============  =============-->
+    <!--=============  =============-->
+    <!--=============  =============-->
+    <!--=============  =============-->
+    <!--=============  =============-->
+    <!--=============  =============-->
+    <!--=============  =============-->
+    <!--=============  =============-->
+    <!--=============  =============-->
+    <!--=============  =============-->
+    <!--=============  =============-->
+    <!--=============  =============-->
+    <!--=============  =============-->
+    <!--=============  =============-->
+
+
+
+    <!--============= Mainjs  =============-->
+    <script src="app.js"></script>
+</body>
+
+</html>
